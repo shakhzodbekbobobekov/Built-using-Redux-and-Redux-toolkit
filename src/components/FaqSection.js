@@ -28,7 +28,9 @@ function FaqSection() {
         </div>
       </div>
       <div className="question">
-        <h4>Can i laerning Lorem ipsum dolor sit amet.</h4>
+        <h4>
+          Can i laerning Lorem ipsum <span> dolor sit amet.</span>{" "}
+        </h4>
         <div className="answer">
           <p>Lorem ipsum dolor sit amet consectetur.</p>
           <p>

@@ -8,26 +8,26 @@ import homeImg from "../img/home-img.jpg";
 function AboutSection() {
   return (
     <About>
-      <div className="description">
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide>
             <h2>Be aducated so that</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>you can change</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>the world.</h2>
-          </div>
+          </Hide>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit debitis
         </p>
         <button>About Us</button>
-      </div>
-      <div className="image">
+      </Description>
+      <Image>
         <img src={homeImg} alt="children is playing" />
-      </div>
+      </Image>
     </About>
   );
 }
@@ -38,6 +38,25 @@ const About = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 5rem 10rem;
+`;
+
+const Description = styled.div`
+  flex: 1;
+  padding-right: 0.5rem;
+`;
+
+const Image = styled.div`
+  flex: 1;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default AboutSection;
