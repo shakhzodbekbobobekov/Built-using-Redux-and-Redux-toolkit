@@ -1,14 +1,12 @@
-import "./App.css";
+import { useSelector } from "react-redux";
 
-import GlobalStyle from "./components/GlobalStyle";
-
-import AboutUs from "./pages/AboutUs";
-// console.log("asfgd")
 function App() {
+  const state = useSelector((state) => state.count);
+
+  console.log({ state });
   return (
     <div className="App">
-      <AboutUs />
-      <GlobalStyle />
+      <h1>Counter:{state} </h1>
     </div>
   );
 }
